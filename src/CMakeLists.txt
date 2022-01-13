@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(${PROJECT_NAME} main.cpp config.h game.h helper.h Screen.h MenuScreen.cpp MenuScreen.h GameScreen.cpp GameScreen.h Sprite.h)
+add_executable(${PROJECT_NAME} "main.cpp" "config.h"  "helper.h" "GameScreen.cpp" "GameScreen.h"  "objects/Object.cpp" "objects/Object.h" "objects/Path.cpp" "objects/Path.h" "objects/Water.cpp" "objects/Water.h" "objects/House.cpp" "objects/House.h" "objects/Hafen.cpp" "objects/Hafen.h" "items/ItemBase.cpp" "items/ItemBase.h" "objects/Pit.cpp" "objects/Pit.h" "items/Key.cpp" "items/Key.h"  "items/Sword.cpp" "items/Sword.h" "items/Heart.cpp" "items/Heart.h" "items/Help.cpp" "items/Help.h" "items/Food.cpp" "items/Food.h" "Inventory.cpp" "Inventory.h" "Char.h" "PlayerChar.cpp" "PlayerChar.h" "items/Equipment.cpp" "items/Equipment.h"  "items/Hat.cpp" "items/Hat.h" "NPC.cpp" "NPC.h")
 
 # Add config.h.in file
 configure_file(config.h.in config.h)
